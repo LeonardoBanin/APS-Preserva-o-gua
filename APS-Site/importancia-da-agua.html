@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Importância da Água</title>
+
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="importancia-da-agua.css">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="img/Favicon.png" type="image/x-icon">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <a href="home.html">
+      <img src="img/Logo1.png" alt="Logo do Projeto Água" class="logo">
+    </a>
+    <h1>A Importância da Água</h1>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main>
+
+    <!-- Seção 1: Por que a água é importante -->
+    <section>
+      <h2>Por que a Água é Importante?</h2>
+      <p>
+        A água é essencial para a vida na Terra. Ela desempenha um papel fundamental na manutenção dos ecossistemas, na
+        saúde humana e no desenvolvimento econômico.
+      </p>
+      <p>
+        Além disso, é um recurso insubstituível em processos industriais, agrícolas e domésticos. Sem ela, a produção de
+        alimentos, a geração de energia e até a higiene básica seriam impossíveis.
+      </p>
+      <p>
+        Cerca de 70% do corpo humano é composto por água, o que mostra sua importância fisiológica. Do mesmo modo,
+        sociedades inteiras dependem de fontes seguras de água para garantir sua sobrevivência e prosperidade.
+      </p>
+      <img src="img/Importancia1.PNG" alt="Importância da Água">
+    </section>
+
+    <!-- Seção 2: Funções vitais da água -->
+    <section>
+      <h2>Funções Vitais da Água</h2>
+      <ul>
+        <li>Manutenção da saúde humana, incluindo hidratação e higiene</li>
+        <li>Regulação do clima e dos ciclos naturais</li>
+        <li>Suporte à agricultura e à produção de alimentos</li>
+        <li>Geração de energia em hidrelétricas</li>
+        <li>Transporte fluvial de pessoas e mercadorias</li>
+        <li>Base para a produção industrial de diversos setores</li>
+      </ul>
+      <p>
+        A água também atua como solvente universal em reações químicas e biológicas. Sua versatilidade permite seu uso
+        em limpeza, produção de bens e processos químicos fundamentais.
+      </p>
+    </section>
+
+    <!-- Seção 3: Desafios relacionados à água -->
+    <section>
+      <h2>Desafios Relacionados à Água</h2>
+      <p>Apesar de sua importância, a água enfrenta desafios como:</p>
+      <ul>
+        <li>Poluição e contaminação de fontes de água</li>
+        <li>Desperdício e uso ineficiente</li>
+        <li>Impactos das mudanças climáticas</li>
+        <li>Falta de acesso a água potável em comunidades vulneráveis</li>
+        <li>Gestão inadequada dos recursos hídricos</li>
+        <li>Conflitos por uso entre setores agrícolas, urbanos e industriais</li>
+      </ul>
+      <p>
+        Com o crescimento populacional e o aumento da demanda por água, esses desafios tendem a se intensificar. A má
+        distribuição também acentua a desigualdade social, pois algumas regiões concentram mais recursos enquanto outras
+        enfrentam escassez extrema.
+      </p>
+    </section>
+
+    <!-- Seção 4: Como preservar a água -->
+    <section>
+      <h2>Como Preservar a Água?</h2>
+      <p>Para garantir a disponibilidade de água para as futuras gerações, é necessário:</p>
+      <ol>
+        <li>Reduzir o consumo e evitar o desperdício</li>
+        <li>Proteger nascentes e rios</li>
+        <li>Investir em saneamento básico e tratamento de esgoto</li>
+        <li>Promover a conscientização sobre o uso sustentável da água</li>
+        <li>Reutilizar a água sempre que possível, especialmente em processos industriais</li>
+        <li>Adotar práticas agrícolas mais eficientes, como irrigação por gotejamento</li>
+      </ol>
+      <p>
+        Pequenas ações no dia a dia, como fechar a torneira ao escovar os dentes ou consertar vazamentos, também fazem
+        grande diferença quando adotadas por muitas pessoas ao mesmo tempo.
+      </p>
+    </section>
+
+    <!-- Seção do quiz -->
+    <section id="quiz">
+      <h2>Teste seus conhecimentos sobre a água!</h2>
+
+      <div class="question">
+        <p>1. Qual é a porcentagem de água no corpo humano?</p>
+        <label>
+          <input type="radio" name="q1" value="a"> 50%
+        </label>
+        <label>
+          <input type="radio" name="q1" value="b"> 70%
+        </label>
+        <label>
+          <input type="radio" name="q1" value="c"> 80%
+        </label>
+      </div>
+
+      <div class="question">
+        <p>2. Qual é a principal função da água na agricultura?</p>
+        <label>
+          <input type="radio" name="q2" value="a"> Transporte de nutrientes
+        </label>
+        <label>
+          <input type="radio" name="q2" value="b"> Refrigeração dos equipamentos
+        </label>
+        <label>
+          <input type="radio" name="q2" value="c"> Irrigação das plantas
+        </label>
+      </div>
+
+      <div class="question">
+        <p>3. Quais ações são importantes para preservar a água?</p>
+        <label>
+          <input type="radio" name="q3" value="a"> Reduzir o consumo e evitar desperdício
+        </label>
+        <label>
+          <input type="radio" name="q3" value="b"> Usar mais produtos descartáveis
+        </label>
+        <label>
+          <input type="radio" name="q3" value="c"> Ignorar os vazamentos em casa
+        </label>
+      </div>
+
+      <button onclick="checkAnswers()">Enviar respostas</button>
+      <button onclick="resetQuiz()">Resetar quiz</button>
+
+      <div id="result" style="display: none;">
+        <p id="score"></p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="footer-content">
+      <p>Preservação da Água. Todos os direitos reservados.</p>
+      <p>Desenvolvido por Leonardo Banin</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="importancia-da-agua.js"></script>
+
+</body>
+
+</html>

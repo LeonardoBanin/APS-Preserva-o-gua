@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #ffffff;
+}
+
+/* Estilo base do body com fundo animado e fonte padrão */
+body {
+    font-family: Arial, sans-serif; /* Define a fonte do texto */
+    line-height: 1.6; /* Espaçamento entre linhas */
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #001f3f, #0074D9); /* Gradiente de azul marinho */
+    color: #fff; /* Cor do texto */
+    background-attachment: fixed; /* Fundo fixo ao rolar a página */
+    background-size: cover; /* Cobre toda a tela */
+}
+
+/* Cabeçalho principal */
+header {
+    background: #5dade4; /* Azul claro */
+    color: #fff;
+    padding: 0.3rem 1rem; /* Reduzido o padding para diminuir a altura */
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra inferior */
+    transition: background-color 0.3s ease; /* Transição suave de cor */
+}
+
+/* Título dentro do header */
+header h1 {
+    margin: 0;
+    font-size: 1.5rem; /* Reduzido o tamanho da fonte */
+    transition: color 0.3s ease, transform 0.3s ease; /* Transições ao passar o mouse */
+}
+
+header h1:hover {
+    color: #d0e9ff; /* Cor mais clara ao passar o mouse */
+    transform: scale(1.05); /* Leve aumento */
+}
+
+/* Logo no topo */
+.logo {
+    width: 120px;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1); /* Efeito de aumento */
+}
+
+/* Navegação em lista */
+nav ul {
+    list-style: none; /* Remove marcadores */
+    padding: 0;
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem; /* Espaçamento entre itens */
+}
+
+/* Links da navegação */
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.1); /* Fundo transparente */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #1a6fa0; /* Cor de fundo ao passar o mouse */
+    transform: scale(1.1);
+}
+
+
+/* Rodapé com animação de fundo */
+footer {
+    background: linear-gradient(-45deg, #3498db, #5dade4, #2980b9, #6dd5fa); /* Gradiente animado */
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite; /* Animação contínua */
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 1rem;
+    box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.3); /* Sombra para cima */
+    margin-top: 40px;
+}
+
+/* Conteúdo interno do rodapé */
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Parágrafos do rodapé */
+.footer-content p {
+    margin: 8px 0;
+    font-weight: 500;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+}
+
+.footer-content p:hover {
+    transform: scale(1.05); /* Efeito de crescimento ao passar o mouse */
+}
+
+
+/* Banner de ponta a ponta */
+/* Banner de ponta a ponta */
+.banner {
+  width: 100%;
+  max-height: 400px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  opacity: 0.7; /* Deixa a imagem um pouco mais escura para visibilidade */
+}
+
+/* Adiciona um filtro escuro sobre a imagem */
+.banner::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 95, 163, 0.6); /* Gradiente azul escuro */
+  z-index: 1;
+}
+
+/* Para centralizar o conteúdo dentro do banner */
+.banner img,
+.banner::after {
+  z-index: 0;
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 2;
+}
+
+.banner-text h1 {
+  font-size: 2.5rem;  /* Tamanho do texto */
+  font-weight: 700;
+  margin: 0;
+}
+
+
+/* Estrutura geral */
+section {
+  padding: 40px 0;
+  margin-bottom: 40px;
+}
+
+/* Destaques (quadrados) */
+.highlights {
+  display: flex;
+  justify-content: space-around; /* ou space-between */
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 40px 0;
+}
+
+.highlight {
+  display: flex;
+  flex: 1 1 30%;
+  flex-direction: column;
+  align-items: center;
+  background-color: linear-gradient(-45deg, #09568a, #114e77, #062336, #6dd5fa); /* Gradiente animado */
+  padding: 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: inherit;
+  border: 2px solid #008CBA;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+}
+
+.highlight:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  background-color: #008CBA;
+}
+
+.highlight img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.highlight h3 {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+/* Tópicos com imagem e texto */
+.topic {
+  display: block;
+  padding: 40px;
+  margin: 20px 0;
+  text-align: left;
+}
+
+.topic div {
+  width: 100%;
+  padding-left: 20px;
+  border-left: 4px solid #008CBA;
+}
+
+.topic h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.topic p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #ffffff;
+}
+
+.image-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 0;
+}
+
+.image-gallery img {
+  width: 30%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-gallery img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  background-color: #e0f7fa;
+}
+
+
+

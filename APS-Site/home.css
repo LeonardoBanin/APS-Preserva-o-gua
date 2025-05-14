@@ -1,0 +1,217 @@
+/* Fundo animado fixo cobrindo toda a tela com um degradê azul marinho */
+#fundoAnimado {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #001f3f, #0074D9);
+}
+
+/* Reset básico para remover margens e paddings padrões e usar box-sizing border-box */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilização do cabeçalho */
+header {
+  background-color: #5dade4;
+  color: #fff;
+  padding: 1px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Logo do cabeçalho com efeito hover de zoom */
+header img {
+  width: 200px;
+  padding-left: 80px;
+  transition: transform 0.3s ease;
+}
+
+header img:hover {
+  transform: scale(1.10);
+}
+
+/* Título do cabeçalho com animação ao passar o mouse */
+header h1 {
+  font-size: 30px;
+  color: white;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+header h1:hover {
+  color: #d0e9ff;
+  transform: scale(1.10);
+}
+
+  /* Container da navegação (menu) */
+  nav {
+    margin: 15px;
+  }
+
+  /* Botão do menu com estilização e animação */
+  .menuButton {
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #268bd0;
+    border: none;
+    color: white;
+    border-radius: 15px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+  .menuButton:hover {
+    background-color: #1a6fa0;
+    transform: scale(1.1);
+  }
+
+  /* Conteúdo do menu (links que aparecem após clique) */
+  .menuContent {
+    display: none;
+    margin-top: 10px;
+  }
+
+  /* Links do menu */
+  .menuContent a {
+    display: block;
+    margin: 10px 0;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+
+  .menuContent a:hover {
+    color: #03056e8a;
+    border-bottom: 0.1rem solid rgb(107, 107, 107);
+    padding-bottom: 0.5rem;
+    transform: scale(1.1);
+  }
+
+  /* Barra de pesquisa centralizada */
+  .pesquisa {
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin-top: 50px;
+  }
+
+  /* Input da pesquisa */
+  .pesquisa input[type="text"] {
+    padding: 18px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+  }
+
+  /* Botão da pesquisa com animação */
+  .pesquisa button {
+    padding: 15px 15px;
+    background-color: #268bd0;
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+  .pesquisa button:hover {
+    background-color: #1a6fa0;
+    transform: scale(1.1);
+  }
+
+/* Banner principal com textos centralizados */
+.banner {
+  text-align: center;
+  color: white;
+  padding: 40px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 90vh;
+  box-sizing: border-box;
+}
+
+/* Estilo animado para títulos e parágrafos do banner */
+.banner h2,
+.banner p {
+  transition: all 0.3s ease;
+  margin: 10px 0;
+}
+
+.banner h2:hover,
+.banner p:hover {
+  color: #f0f8ff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+  transform: scale(1.05);
+}
+
+/* Container do vídeo com proporção e sombra */
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  aspect-ratio: 16 / 9;
+  padding-top: 10px;
+  margin: 40px auto;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Rodapé com gradiente animado */
+footer {
+  background: linear-gradient(-45deg, #3498db, #5dade4, #2980b9, #6dd5fa);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+  color: white;
+  text-align: center;
+  padding: 30px 15px;
+  margin-top: 40px;
+  font-size: 16px;
+  position: relative;
+  box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Conteúdo centralizado no rodapé */
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Texto do rodapé com animação ao passar o mouse */
+.footer-content p {
+  margin: 8px 0;
+  font-weight: 500;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.footer-content p:hover {
+  transform: scale(1.05);
+}
+
+
+
+/* Animação de gradiente no fundo */
+@keyframes gradientAnimation {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}

@@ -1,0 +1,217 @@
+/* Estilo base do body com fundo animado e fonte padrão */
+body {
+    font-family: Arial, sans-serif; /* Define a fonte do texto */
+    line-height: 1.6; /* Espaçamento entre linhas */
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #001f3f, #0074D9); /* Gradiente de azul marinho */
+    color: #fff; /* Cor do texto */
+    background-attachment: fixed; /* Fundo fixo ao rolar a página */
+    background-size: cover; /* Cobre toda a tela */
+}
+
+/* Cabeçalho principal */
+header {
+    background: #5dade4; /* Azul claro */
+    color: #fff;
+    padding: 0.3rem 1rem; /* Reduzido o padding para diminuir a altura */
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra inferior */
+    transition: background-color 0.3s ease; /* Transição suave de cor */
+}
+
+/* Título dentro do header */
+header h1 {
+    margin: 0;
+    font-size: 1.5rem; /* Reduzido o tamanho da fonte */
+    transition: color 0.3s ease, transform 0.3s ease; /* Transições ao passar o mouse */
+}
+
+header h1:hover {
+    color: #d0e9ff; /* Cor mais clara ao passar o mouse */
+    transform: scale(1.05); /* Leve aumento */
+}
+
+/* Logo no topo */
+.logo {
+    width: 120px;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1); /* Efeito de aumento */
+}
+
+/* Navegação em lista */
+nav ul {
+    list-style: none; /* Remove marcadores */
+    padding: 0;
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem; /* Espaçamento entre itens */
+}
+
+/* Links da navegação */
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.1); /* Fundo transparente */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #1a6fa0; /* Cor de fundo ao passar o mouse */
+    transform: scale(1.1);
+}
+
+/* Área principal de conteúdo */
+main {
+    padding: 2rem;
+    max-width: 900px; /* Largura máxima */
+    margin: auto;
+}
+
+/* Seções individuais do conteúdo */
+section {
+    margin-bottom: 2.5rem;
+    background-color: rgba(255, 255, 255, 0.05); /* Fundo levemente branco transparente */
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: scale(1.01); /* Leve aumento ao passar o mouse */
+}
+
+/* Imagens dentro das seções com largura fixa */
+section img {
+    width: 500px; /* Largura fixa para a imagem */
+    height: auto; /* Mantém a proporção */
+    display: block;
+    margin: 1rem auto; /* Margem superior e inferior de 1rem, centralizada */
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra mais profunda */
+    transition: transform 0.5s ease, box-shadow 0.5s ease; /* Suaviza a transição */
+}
+
+/* Efeito img */
+section img:hover {
+    transform: scale(1.05); /* Aumenta a imagem ao passar o mouse */
+}
+
+/* Estilos para a seção do quiz */
+#quiz {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 2rem;
+}
+
+#quiz h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.question {
+    margin-bottom: 1.5rem;
+}
+
+.question p {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.question label {
+    display: block;
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+button {
+    background: #268bd0;
+    color: #fff;
+    border: none;
+    padding: 0.7rem 1.2rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    margin: 0 auto;
+    display: block;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background: #1a6fa0;
+    transform: scale(1.05);
+}
+
+#result {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+/* Estilo para o botão de tentar novamente */
+button:nth-of-type(2) {
+    background-color: #27ae60; /* Cor diferente para o botão de tentar novamente */
+    margin-top: 1rem; /* Espaçamento entre os botões */
+}
+
+button:nth-of-type(2):hover {
+    background-color: #2ecc71; /* Cor mais clara no hover */
+}
+
+/* Rodapé com animação de fundo */
+footer {
+    background: linear-gradient(-45deg, #3498db, #5dade4, #2980b9, #6dd5fa); /* Gradiente animado */
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite; /* Animação contínua */
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 1rem;
+    box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.3); /* Sombra para cima */
+    margin-top: 40px;
+}
+
+/* Conteúdo interno do rodapé */
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Parágrafos do rodapé */
+.footer-content p {
+    margin: 8px 0;
+    font-weight: 500;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+}
+
+.footer-content p:hover {
+    transform: scale(1.05); /* Efeito de crescimento ao passar o mouse */
+}
+
+
+/* Animação contínua do fundo gradiente do rodapé */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}

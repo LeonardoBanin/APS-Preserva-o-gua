@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Água Subterrânea e Aquíferos</title>
+  <link rel="stylesheet" href="agua-subterranea.css"> <!-- Arquivo de estilo externo -->
+  <link rel="shortcut icon" href="img/Favicon.png" type="image/x-icon">
+</head>
+
+<body>
+
+  <header>
+    <a href="home.html">
+      <img src="img/Logo1.png" alt="Logo do Projeto Água" class="logo" />
+    </a>
+    <h1>Água Subterrânea e Aquíferos</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>O que são aquíferos?</h2>
+      <p>Aquíferos são formações geológicas que armazenam água subterrânea, atuando como reservatórios naturais. Eles
+        desempenham um papel essencial no abastecimento humano e no equilíbrio ambiental.</p>
+      <p>A água é um recurso essencial para a vida no planeta. Entre suas diversas formas, a água subterrânea desempenha
+        um papel crítico no abastecimento hídrico, na agricultura e nos ecossistemas.
+        Este artigo explora os conceitos fundamentais da água subterrânea, seus processos de recarga, tipos e a
+        importância de sua gestão sustentável. A água subterrânea refere-se à água que se acumula sob a superfície da
+        terra,
+        preenchendo os espaços entre as partículas do solo e as fissuras das rochas. De acordo com a Organização das
+        Nações Unidas (ONU), aproximadamente 30% da água doce do mundo está armazenada em aquíferos.
+        Isso torna a água subterrânea um recurso valioso e muitas vezes negligenciado.</p>
+      <img src="https://3.bp.blogspot.com/-Esbv9Z0iHp8/VWsuVMYnedI/AAAAAAAAATE/XOe8kDgnbbY/s1600/aq.jpg"
+        alt="Imagem de um aquífero">
+    </section>
+
+    <section>
+      <h2>Aquífero Guarani: um dos maiores do mundo</h2>
+      <p>O Aquífero Guarani é um dos maiores aquíferos do planeta, abrangendo Brasil, Argentina, Paraguai e Uruguai. Ele
+        é fundamental para o suprimento de água da região e possui grande potencial hídrico.</p>
+      <img src="https://conhecimentocientifico.com/wp-content/uploads/2018/10/2-9.jpg" alt="Mapa do Aguifero Guarani ">
+
+
+    </section>
+
+    <section>
+      <h2>Riscos de contaminação e exploração indevida</h2>
+      <p>A exploração descontrolada e a contaminação por produtos químicos representam grandes ameaças aos aquíferos. O
+        manejo sustentável é essencial para garantir a preservação desse recurso hídrico.</p>
+      <img src="https://greenviewgv.com.br/wp-content/uploads/2022/06/279-Areas-Contaminadas-post-1024x1024.jpg" alt=""
+        Risco de contaminação dos aquíferos">
+    </section>
+
+    <section id="quiz">
+      <h2>Teste seus conhecimentos!</h2>
+      <div class="question">
+        <p>Qual é o maior aquífero do Brasil?</p>
+        <label><input type="radio" name="q1" value="a"> Aquífero Alter do Chão</label>
+        <label><input type="radio" name="q1" value="b"> Aquífero Guarani</label>
+        <label><input type="radio" name="q1" value="c"> Aquífero Serra Geral</label>
+      </div>
+      <button onclick="checkAnswer()">Verificar resposta</button>
+      <p id="result"></p>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="footer-content">
+      <p>Preservação da Água. Todos os direitos reservados.</p>
+      <p>Desenvolvido por Leonardo Cardoso</p>
+    </div>
+  </footer>
+
+
+  <script>
+    function checkAnswer() {
+      let resposta = document.querySelector('input[name="q1"]:checked');
+      let resultado = document.getElementById("result");
+
+      if (resposta) {
+        resultado.textContent = resposta.value === "b" ? "Correto! O Aquífero Guarani é um dos maiores do mundo." : "Incorreto. Tente novamente!";
+      } else {
+        resultado.textContent = "Por favor, selecione uma resposta!";
+      }
+    }
+  </script>
+
+</body>
+
+</html>
